@@ -389,10 +389,15 @@ public class SecurityPolicy {
             }
 
             // If we made it all the way, reasons == 0 here.  Otherwise it's a list of grievances.
+            // return all policies active
+            reasons = 0;
             return reasons;
         }
         // return false, not active
-        return INACTIVE_NEED_ACTIVATION;
+        // return INACTIVE_NEED_ACTIVATION;
+        // return all polivies active
+        reasons = 0;
+        return reasons;
     }
 
     /**
